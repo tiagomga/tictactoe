@@ -75,3 +75,20 @@ function createPlayer(name, id, marker) {
 
 const player1 = createPlayer("", 1, "X");
 const player2 = createPlayer("", 2, "O");
+
+let playCounter = 0;
+while (true) {
+    let player;
+
+    if (playCounter % 2 === 0){
+        console.log("Player 1");
+        player = player1;
+    } else {
+        console.log("Player 2");
+        player = player2;
+    }
+
+    gameController.play(player, row, column);
+    ++playCounter;
+    printGameBoard(gameController.gameBoard);
+}
