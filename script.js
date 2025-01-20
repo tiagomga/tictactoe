@@ -67,3 +67,11 @@ function printGameBoard(gameBoard) {
         console.log(row);
     }
 }
+
+
+function createPlayer(name, id, marker) {
+    return { name, id, marker };
+}
+
+const player1 = createPlayer("", 1, "X");
+const player2 = createPlayer("", 2, "O");
