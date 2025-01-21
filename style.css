@@ -124,6 +124,10 @@ input {
 }
 
 .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
     height: var(--square-size);
     width: var(--square-size);
     cursor: pointer;
