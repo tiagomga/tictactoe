@@ -27,3 +27,60 @@
 div.tic, div.tac {
     border-right: none;
 }
+
+.player-info {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+label::before {
+    content: "[";
+}
+
+label::after {
+    content: "]";
+}
+
+form {
+    position: relative;
+}
+
+form button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0px 12px;
+}
+
+input, button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    outline: none;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.game-options button {
+    font-size: 1.2rem;
+    padding: 8px 18px;
+}
+
+input {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    font-size: 1rem;
+    padding: 6px;
+    padding-right: 50px;
+    width: 200px;
+}
