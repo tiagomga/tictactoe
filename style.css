@@ -79,6 +79,16 @@ button:hover {
     width: 180px;
 }
 
+.game-options button:disabled {
+    border-color: rgb(199, 199, 199);
+    cursor: not-allowed;
+}
+
+.game-options button:disabled:hover {
+    background-color: rgb(199, 199, 199);
+    cursor: not-allowed;
+}
+
 .game-options button:hover::before {
     content: "<";
 }
