@@ -2,6 +2,8 @@
     font-family:'Courier New', Courier, monospace;
     font-size: 16px;
     --primary-color: rgb(31, 31, 31);
+    --square-size: 120px;
+    --gameboard-size: calc(var(--square-size)*3);
     color: var(--primary-color);
 }
 
@@ -83,4 +85,42 @@ input {
     padding: 6px;
     padding-right: 50px;
     width: 200px;
+}
+
+.gameboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px auto;
+    width: var(--gameboard-size);
+}
+
+.square:nth-child(1),
+.square:nth-child(2),
+.square:nth-child(3),
+.square:nth-child(4),
+.square:nth-child(5),
+.square:nth-child(6) {
+    border-bottom: 8px solid var(--primary-color);
+}
+
+.square:nth-child(2),
+.square:nth-child(8) {
+    border-left: 8px solid var(--primary-color);
+    border-right: 8px solid var(--primary-color);
+}
+
+.square:nth-child(5) {
+    border-left: 8px solid var(--primary-color);
+    border-right: 8px solid var(--primary-color);
+}
+
+.square {
+    height: var(--square-size);
+    width: var(--square-size);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.square:hover {
+    background-color: rgb(237, 237, 237);
 }
