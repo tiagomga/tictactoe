@@ -76,6 +76,15 @@ button:hover {
 .game-options button {
     font-size: 1.2rem;
     padding: 8px 18px;
+    width: 180px;
+}
+
+.game-options button:hover::before {
+    content: "<";
+}
+
+.game-options button:hover::after {
+    content: ">";
 }
 
 input {
@@ -123,4 +132,11 @@ input {
 
 .square:hover {
     background-color: rgb(237, 237, 237);
+}
+
+.game-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
