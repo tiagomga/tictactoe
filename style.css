@@ -40,6 +40,10 @@ div.tic, div.tac {
     margin: 40px 15% 0px 15%;
 }
 
+label {
+    min-width: 100px;
+}
+
 label::before {
     content: "[";
 }
@@ -50,6 +54,9 @@ label::after {
 
 form {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 form button {
