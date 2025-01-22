@@ -158,3 +158,16 @@ input {
     align-items: center;
     gap: 12px;
 }
+
+/* Animations */
+@keyframes jump {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
