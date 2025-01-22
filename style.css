@@ -137,11 +137,15 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4.5rem;
+    font-size: 8rem;
     height: var(--square-size);
     width: var(--square-size);
     cursor: pointer;
     transition: all 0.25s ease;
+}
+
+.square.selected {
+    font-size: 4.5rem;
 }
 
 .square:hover {
