@@ -159,6 +159,15 @@ input {
     gap: 12px;
 }
 
+.turn, .winner {
+    position: absolute;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4px 8px;
+    top: -32px;
+    animation: jump 0.35s ease;
+}
+
 /* Animations */
 @keyframes jump {
     0% {
