@@ -171,10 +171,13 @@ input {
 
 .message {
     position: absolute;
+    text-align: center;
     background-color: var(--primary-color);
     color: white;
     padding: 4px 8px;
     top: -32px;
+    left: 0;
+    right: 0;
     animation: jump 0.35s ease;
 }
 
